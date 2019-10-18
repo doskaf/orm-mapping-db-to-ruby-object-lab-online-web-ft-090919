@@ -20,7 +20,7 @@ class Student
     SQL
     
     DB[:conn].execute(sql)
-  end.first
+  end
 
   def self.new_from_db(row)
     new_student = self.new
