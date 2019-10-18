@@ -13,9 +13,9 @@ class Student
   
   def self.students_below_12th_grade
     sql = <<-SQL
-      SELECT *
+      SELECT name
       FROM students
-      GROUP BY name
+      GROUP BY grade
       HAVING grade < 12
     SQL
     
